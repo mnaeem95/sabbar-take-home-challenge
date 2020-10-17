@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "c7fefca7-fbbe-4418-bf57-1f18dbc6f741",
+		"name": "Supply & Demand Matching",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Muhammad Saleem\",\n    \"locationLatitude\": 59.954927,\n    \"locationLongitude\": 40.2195978,\n    \"numberOfRides\": 1,\n    \"rating\": 1.5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/sabbar/customers/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sabbar",
+						"customers",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Muhammad Saleem\",\n    \"locationLatitude\": 59.954927,\n    \"locationLongitude\": 40.2195978,\n    \"numberOfRides\": 1,\n    \"rating\": 1.5\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/sabbar/customers/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sabbar",
+								"customers",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "236"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ec-eWB8yYaB1oI26QS1ME/YATwj2Ns\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 Oct 2020 08:58:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"numberOfRides\": 1,\n    \"rating\": 1.5,\n    \"_id\": \"5f8ab21ab28c06358ac3204c\",\n    \"name\": \"Muhammad Saleem\",\n    \"locationLatitude\": 59.954927,\n    \"locationLongitude\": 40.2195978,\n    \"createdAt\": \"2020-10-17T08:58:02.548Z\",\n    \"updatedAt\": \"2020-10-17T08:58:02.548Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/sabbar/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sabbar",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/sabbar/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sabbar",
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "6524"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"197c-foirwd2v7gcc5t1QvyFsSbnZvYE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 Oct 2020 08:57:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf88\",\n        \"name\": \"Sybyl Coxwell\",\n        \"locationLatitude\": 67.1356306,\n        \"locationLongitude\": 20.6831751,\n        \"numberOfRides\": 35,\n        \"rating\": 3.5\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf89\",\n        \"name\": \"Carolus Boddis\",\n        \"locationLatitude\": 27.950753,\n        \"locationLongitude\": 109.592921,\n        \"numberOfRides\": 99,\n        \"rating\": 3.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf8a\",\n        \"name\": \"Sunny Beak\",\n        \"locationLatitude\": 55.813957,\n        \"locationLongitude\": 37.626119,\n        \"numberOfRides\": 52,\n        \"rating\": 3.7\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf8b\",\n        \"name\": \"Gracie Frunks\",\n        \"locationLatitude\": 7.833333,\n        \"locationLongitude\": -11.666667,\n        \"numberOfRides\": 67,\n        \"rating\": 3.5\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf8c\",\n        \"name\": \"Nessy Stanway\",\n        \"locationLatitude\": 31.2303904,\n        \"locationLongitude\": 121.4737021,\n        \"numberOfRides\": 46,\n        \"rating\": 3.7\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf8d\",\n        \"name\": \"Artie Ovey\",\n        \"locationLatitude\": -33.047238,\n        \"locationLongitude\": -71.6126885,\n        \"numberOfRides\": 77,\n        \"rating\": 4.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf8e\",\n        \"name\": \"Harriette Adnam\",\n        \"locationLatitude\": 49.3967841,\n        \"locationLongitude\": 14.4813772,\n        \"numberOfRides\": 25,\n        \"rating\": 3.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf8f\",\n        \"name\": \"Anastassia Shepherdson\",\n        \"locationLatitude\": 48.7700185,\n        \"locationLongitude\": 2.3508225,\n        \"numberOfRides\": 97,\n        \"rating\": 3.8\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf90\",\n        \"name\": \"Alfy Noell\",\n        \"locationLatitude\": 53.5483785,\n        \"locationLongitude\": 10.078217,\n        \"numberOfRides\": 70,\n        \"rating\": 3.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf91\",\n        \"name\": \"Cory Crudge\",\n        \"locationLatitude\": 22.791223,\n        \"locationLongitude\": 110.454459,\n        \"numberOfRides\": 18,\n        \"rating\": 3.9\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf92\",\n        \"name\": \"Jaymie Ware\",\n        \"locationLatitude\": 57.1770444,\n        \"locationLongitude\": 26.0336703,\n        \"numberOfRides\": 78,\n        \"rating\": 4.1\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf93\",\n        \"name\": \"Correna Vella\",\n        \"locationLatitude\": 8.0093062,\n        \"locationLongitude\": -62.4015536,\n        \"numberOfRides\": 49,\n        \"rating\": null\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf94\",\n        \"name\": \"Tiphany Patrick\",\n        \"locationLatitude\": 23.791187,\n        \"locationLongitude\": 112.299103,\n        \"numberOfRides\": 38,\n        \"rating\": 3.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf95\",\n        \"name\": \"Nata Carvill\",\n        \"locationLatitude\": -4.8149897,\n        \"locationLongitude\": -38.1054495,\n        \"numberOfRides\": 63,\n        \"rating\": 3.7\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf96\",\n        \"name\": \"Rutger Haysom\",\n        \"locationLatitude\": -10.5792295,\n        \"locationLongitude\": -37.745028,\n        \"numberOfRides\": 53,\n        \"rating\": 3.8\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf97\",\n        \"name\": \"Roseanne Riguard\",\n        \"locationLatitude\": -10.5732996,\n        \"locationLongitude\": -38.4429274,\n        \"numberOfRides\": 40,\n        \"rating\": 4.3\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf98\",\n        \"name\": \"Lilith Budnk\",\n        \"locationLatitude\": 54.7180477,\n        \"locationLongitude\": 18.4086339,\n        \"numberOfRides\": 27,\n        \"rating\": 4.9\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf99\",\n        \"name\": \"Nessi Basezzi\",\n        \"locationLatitude\": 42.3521585,\n        \"locationLongitude\": 44.6875131,\n        \"numberOfRides\": 53,\n        \"rating\": 3.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf9a\",\n        \"name\": \"Terrie Larwell\",\n        \"locationLatitude\": 52.1662684,\n        \"locationLongitude\": 109.7765741,\n        \"numberOfRides\": 12,\n        \"rating\": 4.5\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf9b\",\n        \"name\": \"Tabb Waring\",\n        \"locationLatitude\": 36.854929,\n        \"locationLongitude\": 114.503339,\n        \"numberOfRides\": 97,\n        \"rating\": 4.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf9c\",\n        \"name\": \"Yelena Goodspeed\",\n        \"locationLatitude\": 50.810462,\n        \"locationLongitude\": 16.2478969,\n        \"numberOfRides\": 81,\n        \"rating\": 3.7\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf9d\",\n        \"name\": \"Almire Sutlieff\",\n        \"locationLatitude\": 9.5113187,\n        \"locationLongitude\": -75.3761952,\n        \"numberOfRides\": 36,\n        \"rating\": null\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf9e\",\n        \"name\": \"Derek Paley\",\n        \"locationLatitude\": 28.213424,\n        \"locationLongitude\": 116.429948,\n        \"numberOfRides\": 64,\n        \"rating\": 4.2\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cf9f\",\n        \"name\": \"Muffin Gemson\",\n        \"locationLatitude\": 44.9688472,\n        \"locationLongitude\": -93.1315648,\n        \"numberOfRides\": 18,\n        \"rating\": null\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa0\",\n        \"name\": \"Ondrea Watson\",\n        \"locationLatitude\": 16.5347882,\n        \"locationLongitude\": 97.6032892,\n        \"numberOfRides\": 55,\n        \"rating\": 3.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa1\",\n        \"name\": \"Candice Sabati\",\n        \"locationLatitude\": 40.105193,\n        \"locationLongitude\": 124.3602631,\n        \"numberOfRides\": 43,\n        \"rating\": 4.9\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa2\",\n        \"name\": \"Fania Kadwallider\",\n        \"locationLatitude\": 50.6999479,\n        \"locationLongitude\": 13.8459307,\n        \"numberOfRides\": 42,\n        \"rating\": 4.2\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa3\",\n        \"name\": \"Hali Johnsey\",\n        \"locationLatitude\": 49.2809997,\n        \"locationLongitude\": 17.876832,\n        \"numberOfRides\": 83,\n        \"rating\": 3.8\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa4\",\n        \"name\": \"Henri Rosentholer\",\n        \"locationLatitude\": 27.517896,\n        \"locationLongitude\": 109.213644,\n        \"numberOfRides\": 83,\n        \"rating\": 3.5\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa5\",\n        \"name\": \"Kissee Broun\",\n        \"locationLatitude\": 18.3999996,\n        \"locationLongitude\": 121.5166702,\n        \"numberOfRides\": 23,\n        \"rating\": 4.4\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa6\",\n        \"name\": \"Gunter Brimmacombe\",\n        \"locationLatitude\": 59.2421439,\n        \"locationLongitude\": 14.2330452,\n        \"numberOfRides\": 91,\n        \"rating\": 4.3\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa7\",\n        \"name\": \"Louie Lattie\",\n        \"locationLatitude\": 46.176012,\n        \"locationLongitude\": 129.425798,\n        \"numberOfRides\": 55,\n        \"rating\": 4.7\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa8\",\n        \"name\": \"Ardath Mundie\",\n        \"locationLatitude\": 41.7721061,\n        \"locationLongitude\": -72.7038047,\n        \"numberOfRides\": 47,\n        \"rating\": 3.5\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfa9\",\n        \"name\": \"Jori Wrangle\",\n        \"locationLatitude\": 10.3187555,\n        \"locationLongitude\": 123.906446,\n        \"numberOfRides\": 30,\n        \"rating\": 4.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfaa\",\n        \"name\": \"Donavon Buckston\",\n        \"locationLatitude\": 59.954927,\n        \"locationLongitude\": 40.2195978,\n        \"numberOfRides\": 23,\n        \"rating\": 3.7\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfab\",\n        \"name\": \"Saudra Patience\",\n        \"locationLatitude\": 29.181201,\n        \"locationLongitude\": 110.138102,\n        \"numberOfRides\": 17,\n        \"rating\": 3.9\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfac\",\n        \"name\": \"Nicola Masser\",\n        \"locationLatitude\": 19.4102526,\n        \"locationLongitude\": -99.0073673,\n        \"numberOfRides\": 80,\n        \"rating\": 3.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfad\",\n        \"name\": \"Joli Maffi\",\n        \"locationLatitude\": 39.2476884,\n        \"locationLongitude\": 21.1614231,\n        \"numberOfRides\": 9,\n        \"rating\": 4.4\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfae\",\n        \"name\": \"Elysha Prop\",\n        \"locationLatitude\": 59.3525393,\n        \"locationLongitude\": 18.0191452,\n        \"numberOfRides\": 77,\n        \"rating\": 3.6\n    },\n    {\n        \"_id\": \"5f89104e822fef2c7ac8cfaf\",\n        \"name\": \"Meggie Illston\",\n        \"locationLatitude\": 40.3779093,\n        \"locationLongitude\": -7.8440342,\n        \"numberOfRides\": 26,\n        \"rating\": 3.8\n    },\n    {\n        \"_id\": \"5f8ab14eb28c06358ac3204a\",\n        \"numberOfRides\": 1,\n        \"rating\": 1.5,\n        \"name\": \"Muhammad Naeem\",\n        \"locationLatitude\": 59.954927,\n        \"locationLongitude\": 40.2195978,\n        \"createdAt\": \"2020-10-17T08:54:38.967Z\",\n        \"updatedAt\": \"2020-10-17T08:54:38.967Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"5f8ab1a9b28c06358ac3204b\",\n        \"numberOfRides\": 1,\n        \"rating\": 1.5,\n        \"name\": \"Muhammad Naeem\",\n        \"locationLatitude\": 59.954927,\n        \"locationLongitude\": 40.2195978,\n        \"createdAt\": \"2020-10-17T08:56:09.460Z\",\n        \"updatedAt\": \"2020-10-17T08:56:09.460Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Delete Customers",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userIds\": [\"5f8ab21ab28c06358ac3204c\"]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/sabbar/customers/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sabbar",
+						"customers",
+						"delete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Customers",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userIds\": [\"5f8ab21ab28c06358ac3204c\"]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/sabbar/customers/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sabbar",
+								"customers",
+								"delete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12-uqqlHE4Wm7LBRtOIBZ9EyD8JjQM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 Oct 2020 09:01:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"deletedCount\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"_id\": \"5f8ab21ab28c06358ac3204c\",\n    \"name\": \"Muhammad Saleem\",\n    \"locationLatitude\": 59.954927,\n    \"locationLongitude\": 40.2195978,\n    \"numberOfRides\": 1,\n    \"rating\": 1.5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/sabbar/customers/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sabbar",
+						"customers",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Customer",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5f8ab21ab28c06358ac3204c\",\n    \"name\": \"Muhammad Saleem\",\n    \"locationLatitude\": 59.954927,\n    \"locationLongitude\": 40.2195978,\n    \"numberOfRides\": 1,\n    \"rating\": 1.5\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/sabbar/customers/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sabbar",
+								"customers",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "236"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ec-uktD7V/xuyL62PcIraj5QO5/Ou4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 Oct 2020 09:00:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"5f8ab21ab28c06358ac3204c\",\n    \"numberOfRides\": 1,\n    \"rating\": 1.5,\n    \"name\": \"Muhammad Saleem\",\n    \"locationLatitude\": 59.954927,\n    \"locationLongitude\": 40.2195978,\n    \"createdAt\": \"2020-10-17T08:58:02.548Z\",\n    \"updatedAt\": \"2020-10-17T09:00:10.650Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		}
+	]
+}

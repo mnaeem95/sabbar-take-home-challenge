@@ -35,6 +35,11 @@ Postman collection is placed at the root of the repository.
 ```
 npm run start:cli -- COMMAND_NAME(customer, cruiser, match, manual, exit)
 ```
+For example to get a list of customers run this command
+
+```
+npm run start:cli -- customer
+```
 
 ## Start the server
 

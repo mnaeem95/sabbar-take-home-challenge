@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node dist/server.js",
-    "start:cli": "npm run build && node dist/index.js match",
+    "start:cli": "npm run build && node dist/index.js",
     "dev": "node --inspect=5858 -r ts-node/register ./src/server.ts",
     "start:watch": "nodemon",
     "build": "npm run lint && npm run format && tsc",
